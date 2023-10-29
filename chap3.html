@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<body>
+    <h1>EX:3.1</h1>
+    <h1>EX:3.2</h1>
+    <h1>EX:3.3</h1>
+    <h1>EX:3.4</h1>
+    <h1>EX:3.5</h1>
+    <script src="style.js"></script>
+    <h1>Manipulating an array</h1>
+    <script>
+        const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {test: 'one', score: 55}, ['one', 'two']];
+
+// Step 1: Remove the first item and the last item
+theList.shift();
+theList.pop();
+
+// Step 2: Add "FIRST" to the start of the array
+theList.unshift("FIRST");
+
+// Step 3: Assign "hello World" to the fourth item value
+theList[3] = "hello World";
+
+// Step 4: Assign "MIDDLE" to the third index value
+theList[2] = "MIDDLE";
+
+// Step 5: Add "LAST" to the last position in the array
+theList.push("LAST");
+
+// Output the modified array to the console
+console.log(theList);
+
+    </script>
+    <h1>Company product catalog</h1>
+    <script>
+let inventory = [];
+let item1 = {
+    name: "Laptop",
+    model: "ABC123",
+    cost: 800,
+    quantity: 10
+};
+
+let item2 = {
+    name: "Smartphone",
+    model: "XYZ789",
+    cost: 600,
+    quantity: 15
+};
+
+let item3 = {
+    name: "Tablet",
+    model: "PQR456",
+    cost: 300,
+    quantity: 20
+};
+
+inventory.push(item1, item2, item3);
+console.log("Inventory:", inventory);
+let thirdItemQuantity = inventory[2].quantity;
+console.log("Quantity of third item:", thirdItemQuantity);
+
+    </script>
+</body>
+</html>
